@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="businessLogic.GymManagerController">
+   <children>
+      <Button fx:id="backbtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToBack" text="&lt;" />
+      <Label fx:id="main_heading" layoutX="337.0" layoutY="15.0" text="Gym Manager">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="crewviewfeedback" layoutX="353.0" layoutY="349.0" mnemonicParsing="false" onAction="#switchToViewFeedback" prefHeight="53.0" prefWidth="176.0" text="View Feedback">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+<Button layoutX="351.0" layoutY="224.0" mnemonicParsing="false" onAction="#switchToReportStock" prefHeight="53.0" prefWidth="183.0" text="Report Gym Stock">
+    <font>
+        <Font size="18.0" />
+    </font>
+</Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="businessLogic.MainManagerController">
+   <children>
+      <Label fx:id="main_heading" layoutX="296.0" layoutY="27.0" text="Update Inventory">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#gobackinventory" text="&lt;" />
+      <Button layoutX="336.0" layoutY="316.0" mnemonicParsing="false" onAction="#clickroominventory" prefHeight="53.0" prefWidth="191.0" text="Room Inventory">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="338.0" layoutY="420.0" mnemonicParsing="false" onAction="#clickRestaurantinventory" prefHeight="53.0" prefWidth="191.0" text="Restaurant Inventory">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="updategyminventorybutton" layoutX="331.0" layoutY="207.0" mnemonicParsing="false" onAction="#clickGyminventory" prefHeight="53.0" prefWidth="191.0" text="Gym Inventory">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

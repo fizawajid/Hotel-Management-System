@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<ScrollPane fx:id="scrollPane" prefWidth="600" prefHeight="400" xmlns:fx="http://javafx.com/fxml">
+    <content>
+        <HBox fx:id="imageContainer" spacing="10" alignment="CENTER">
+            <!-- Add multiple panes to represent room images -->
+            <Pane fx:id="room1" prefWidth="200" prefHeight="150" styleClass="room-image"></Pane>
+            <Pane fx:id="room2" prefWidth="200" prefHeight="150" styleClass="room-image"></Pane>
+            <Pane fx:id="room3" prefWidth="200" prefHeight="150" styleClass="room-image"></Pane>
+        </HBox>
+    </content>
+</ScrollPane>

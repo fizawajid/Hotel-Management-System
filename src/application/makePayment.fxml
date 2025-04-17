@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="688.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="businessLogic.MakePaymentController">
+   <children>
+      <Label fx:id="main_heading" layoutX="401.0" layoutY="26.0" text="Payment">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="&lt;" />
+      <TableView fx:id="paymentTable" layoutX="108.0" layoutY="117.0" prefHeight="394.0" prefWidth="708.0">
+         <columns>
+            <TableColumn fx:id="itemColumn" prefWidth="150.0" text="Item" />
+            <TableColumn fx:id="categoryColumn" prefWidth="140.0" text="Category" />
+            <TableColumn fx:id="priceColumn" prefWidth="128.0" text="Price" />
+            <TableColumn fx:id="quantityColumn" prefWidth="123.0" text="Quantity" />
+            <TableColumn fx:id="totalPriceColumn" prefWidth="157.0" text="Total Price" />
+         </columns>
+      </TableView>
+      <Label fx:id="lblFoodTotal" layoutX="106.0" layoutY="529.0" prefHeight="25.0" prefWidth="200.0" text="Food Total: " />
+      <Label fx:id="lblRoomTotal" layoutX="103.0" layoutY="556.0" prefHeight="25.0" prefWidth="200.0" text="Room Total: " />
+      <Label fx:id="lblGrandTotal" layoutX="103.0" layoutY="584.0" prefHeight="25.0" prefWidth="200.0" text="Grand Total: " />
+      <Button layoutX="189.0" layoutY="618.0" mnemonicParsing="false" onAction="#payByCash" prefHeight="39.0" prefWidth="124.0" text="By Cash">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="633.0" layoutY="618.0" mnemonicParsing="false" onAction="#payByCreditCard" text="By Credit Card">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

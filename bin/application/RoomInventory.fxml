@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="businessLogic.UpdateStockController">
+   <children>
+      <Label fx:id="main_heading" layoutX="260.0" layoutY="20.0" text="Update Room inventory">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backupdateinventory_RO" text="&lt;" />
+        <TableView fx:id="gymInventoryTable3" layoutX="110.0" layoutY="151.0" prefHeight="312.0" prefWidth="667.0">
+    <columns>
+        <TableColumn fx:id="idColumn3" prefWidth="150.0" text="ID" />
+        <TableColumn fx:id="handlerColumn3" prefWidth="150.0" text="Handler" />
+        <TableColumn fx:id="inventoryColumn3" prefWidth="232.0" text="Inventory" />
+        <TableColumn fx:id="quantityColumn3" prefWidth="134.0" text="Quantity" />
+    </columns>
+</TableView>
+      <Label fx:id="get_label" layoutX="238.0" layoutY="519.0" prefHeight="25.0" prefWidth="61.0" text="Service ID" />
+      <TextField fx:id="serviceIdField3" layoutX="312.0" layoutY="518.0" prefHeight="26.0" prefWidth="274.0" />
+      <Button layoutX="602.0" layoutY="519.0" mnemonicParsing="false" onAction="#provideservice_r" text="Provide Service" />
+      <Button layoutX="408.0" layoutY="614.0" mnemonicParsing="false" onAction="#clickdone_i" prefHeight="38.0" prefWidth="75.0" text="Done" />
+   </children>
+</AnchorPane>

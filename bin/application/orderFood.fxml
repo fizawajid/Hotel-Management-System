@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="businessLogic.OrderFoodController">
+   <children>
+      <Label fx:id="main_heading" layoutX="358.0" layoutY="26.0" text="Order Food">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="orderfoodbackbtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchtoback" text="&lt;" />
+      <TableView fx:id="menuTable" layoutX="140.0" layoutY="118.0" prefHeight="383.0" prefWidth="637.0">
+        <columns>
+         	<TableColumn fx:id="itemIdColumn" prefWidth="100" text="Item ID" />
+        	<TableColumn fx:id="itemNameColumn" prefWidth="251.0" text="Item Name" />
+         	<TableColumn fx:id="priceColumn" prefWidth="129.0" text="Price" />
+            <TableColumn fx:id="categoryColumn" prefWidth="156.0" text="Category" />
+         </columns>
+      </TableView>
+      <Label fx:id="get_label" layoutX="269.0" layoutY="584.0" text="Quantity">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="enterButton" layoutX="617.0" layoutY="565.0" mnemonicParsing="false" onAction="#handleEnterButton" text="Enter" />
+      <Button fx:id="doneButton" layoutX="425.0" layoutY="637.0" mnemonicParsing="false" onAction="#handleDoneButton" text="Done">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="quantityField" layoutX="384.0" layoutY="585.0" prefHeight="25.0" prefWidth="192.0" />
+      <Label fx:id="get_label" layoutX="269.0" layoutY="538.0" text="Food ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="itemIdField" layoutX="384.0" layoutY="539.0" prefHeight="25.0" prefWidth="192.0" />
+   </children>
+</AnchorPane>

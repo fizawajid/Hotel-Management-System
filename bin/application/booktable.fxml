@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="businessLogic.bookTableController">
+   <children>
+      <TextField fx:id="starttimeField" layoutX="248.0" layoutY="157.0" prefHeight="26.0" prefWidth="175.0" />
+      <TableView fx:id="Table_table" layoutX="233.0" layoutY="214.0" prefHeight="352.0" prefWidth="431.0">
+         <columns>
+            <TableColumn fx:id="TableNo" prefWidth="214.0" text="Table No" />
+            <TableColumn fx:id="Capacity" minWidth="0.0" prefWidth="219.0" text="Table Capacity" />
+         </columns>
+      </TableView>
+      <Label fx:id="get_label" layoutX="268.0" layoutY="588.0" text="Table No.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tablenofield" layoutX="383.0" layoutY="589.0" prefHeight="25.0" prefWidth="255.0" />
+      <Label fx:id="main_heading" layoutX="321.0" layoutY="25.0" text="Available Tables">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#clickbookTableback" text="&lt;" />
+      <Button layoutX="809.0" layoutY="132.0" mnemonicParsing="false" onAction="#checkTableAvailability" text="Enter" />
+      <Button layoutX="407.0" layoutY="637.0" mnemonicParsing="false" onAction="#clicknextAtables" text="Next">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="get_label" layoutX="155.0" layoutY="157.0" text="Start time">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="get_label" layoutX="77.0" layoutY="106.0" text="Date of Reservation">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="ReservationDatePicker" layoutX="248.0" layoutY="107.0" />
+      <Label fx:id="get_label" layoutX="469.0" layoutY="106.0" text="No. of Guests">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="capacityField" layoutX="599.0" layoutY="107.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label fx:id="get_label" layoutX="506.0" layoutY="157.0" text="End time">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="endtimeField" layoutX="599.0" layoutY="158.0" prefHeight="26.0" prefWidth="175.0" />
+   </children>
+</AnchorPane>

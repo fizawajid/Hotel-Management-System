@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="businessLogic.ViewFeedbackController">
+   <children>
+      <Label fx:id="main_heading" layoutX="370.0" layoutY="13.0" text=" Feedback">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="feedbackbutton" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchtoback" text="&lt;" />
+      <TableView fx:id="feedbacktable" layoutX="110.0" layoutY="153.0" prefHeight="422.0" prefWidth="678.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="guestIdColumn" prefWidth="150.0" text="Guest ID" />
+          <TableColumn fx:id="serviceColumn" prefWidth="308.0" text="Service" />
+          <TableColumn fx:id="ratingColumn" prefWidth="144.0" text="Rating" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
